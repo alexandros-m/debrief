@@ -7,9 +7,13 @@ open source, ai rss news aggregator with interest-based sorting
 
 - Python 3
 - [Google AI Studio API key](https://aistudio.google.com/apikey)
+
 Windows:
+
 - `pip install -r requirements.txt`
+
 Linux (apt-based):
+
 - `sudo apt update && sudo apt install -y python3-full python3-venv python3-pip`
 - `python3 -m venv .myenv`
 - `source .myenv/bin/activate`
