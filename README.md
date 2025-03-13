@@ -1,6 +1,6 @@
 # debrief
 open source, ai rss news aggregator with interest-based sorting
-![usage example](styles/screenshot.png)
+![usage example](style/screenshot.png)
 
 ## prerequisites
 
