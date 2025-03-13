@@ -1,0 +1,10 @@
+{
+    "model": "gemini-2.0-flash-lite",
+    "batch_size": 20,
+    "input_file": "rss_sources.txt",
+    "output_file": "results.csv",
+    "google_api_key": "",
+    "interests": "",
+    "preview_sites": true,
+    "theme": "newspaper.css"
+}
