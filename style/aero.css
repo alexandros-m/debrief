@@ -1,0 +1,138 @@
+/* Frutiger Aero-inspired stylesheet */
+:root {
+    --bg-color: #e0f7fa;  /* Light cyan background */
+    --text-color: #004d40;  /* Dark teal for text */
+    --accent-color: #ff6f00;  /* Bright orange for accents */
+    --border-color: #80cbc4;  /* Soft teal for borders */
+    --rating-bg: #b2ebf2;  /* Light cyan for rating badges */
+    --glass-effect: rgba(255, 255, 255, 0.3);  /* Glass-like transparency */
+    --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);  /* Soft shadow */
+}
+
+body.dark-mode {
+    --bg-color: #263238;  /* Dark blue-gray background */
+    --text-color: #e0f7fa;  /* Light cyan for text */
+    --accent-color: #ffab40;  /* Bright orange for accents */
+    --border-color: #546e7a;  /* Darker teal for borders */
+    --rating-bg: #37474f;  /* Darker cyan for rating badges */
+    --glass-effect: rgba(38, 50, 56, 0.5);  /* Dark glass effect */
+    --shadow: 0 4px 6px rgba(0, 0, 0, 0.3);  /* Stronger shadow */
+}
+
+body {
+    font-family: "Segoe UI", "Arial", sans-serif;  /* Frutiger Aero-style font */
+    margin: 0;
+    padding: 20px;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px;
+    background: var(--glass-effect);
+    backdrop-filter: blur(10px);  /* Frosted glass effect */
+    border-radius: 20px;  /* Rounded corners */
+    border: 1px solid var(--border-color);
+    box-shadow: var(--shadow);
+}
+
+.header {
+    border-bottom: 2px solid var(--accent-color);
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+}
+
+.article-card {
+    margin-bottom: 30px;
+    padding: 20px;
+    background: var(--glass-effect);
+    backdrop-filter: blur(5px);  /* Frosted glass effect */
+    border-radius: 15px;  /* Rounded corners */
+    border: 1px solid var(--border-color);
+    box-shadow: var(--shadow);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.article-card:hover {
+    transform: translateY(-5px);  /* Lift effect on hover */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.preview-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    margin-top: 15px;
+    border-radius: 10px;  /* Rounded corners */
+    border: 1px solid var(--border-color);
+    box-shadow: var(--shadow);
+}
+
+.rating {
+    background-color: var(--rating-bg);
+    color: var(--accent-color);
+    padding: 5px 10px;
+    font-size: 0.9em;
+    border-radius: 10px;  /* Rounded corners */
+    display: inline-block;
+    margin-bottom: 10px;
+    border: 1px solid var(--border-color);
+    box-shadow: var(--shadow);
+}
+
+a {
+    color: var(--accent-color);
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #ff8f00;  /* Brighter orange on hover */
+}
+
+.title {
+    font-size: 1.4em;
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.favicon {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;  /* Circular favicon */
+    border: 1px solid var(--border-color);
+    box-shadow: var(--shadow);
+}
+
+.description {
+    color: var(--text-color);
+    font-size: 0.95em;
+    margin-top: 10px;
+}
+
+.mode-toggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    padding: 10px 15px;
+    background: var(--glass-effect);
+    backdrop-filter: blur(5px);  /* Frosted glass effect */
+    border-radius: 15px;  /* Rounded corners */
+    border: 1px solid var(--border-color);
+    box-shadow: var(--shadow);
+    font-weight: bold;
+    color: var(--accent-color);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.mode-toggle:hover {
+    transform: translateY(-2px);  /* Lift effect on hover */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
