@@ -93,17 +93,6 @@ if os.path.exists(output_file):
 else:
     print(f"{output_file} not found. Fetching will begin.")
 
-# Placeholder functions for parsing and HTML creation
-def parse_and_rate():
-    print("Running parse_and_rate()...")
-    # Implement your parsing and rating logic here
-    pass
-
-def build_html():
-    print("Running build_html()...")
-    # Implement your HTML creation logic here
-    pass
-
 # Run the functions
 parsing.parse_and_rate()
 create_html.build_html()
