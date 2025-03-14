@@ -35,3 +35,4 @@ Linux (apt-based):
 - format the object sent to the model in a better way, strip the index number that is also sent
 - change the .html output's layout to something more sophisticated and maybe user-friendly
 - transform the CLI scripts to a web server application with a proper website frontend - maybe integrate the whole project to an Electron-type program
+- add a buffer for already rated and parsed stories, which would be a prerequisite for real-time aggregation (rating + parsing of the website for the preview)
